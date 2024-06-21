@@ -149,7 +149,12 @@ p.danger {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("./assets/img/banner-bg.png");
+  /* background-image: url("./assets/img/banner-bg.png"); */
+  background: linear-gradient(
+    45.21deg,
+    rgba(0, 0, 0, 0.5) 50.01%,
+    rgba(96, 16, 143, 0.5) 100.59%
+  );
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -204,7 +209,7 @@ p.danger {
 .banner .wrap-img-profile {
   max-width: 300px;
   /* max-height: 300px; */
-  border-radius: 10%;
+  border-radius: 40%;
   overflow: hidden;
   animation: updown 3s linear infinite;
 }
@@ -213,13 +218,13 @@ p.danger {
 }
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
 }
 .txt-rotate > .wrap {
@@ -264,6 +269,11 @@ p.danger {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+.carousel-image {
+  height: 150px;
+  object-fit: contain;
 }
 
 /************ Projects Css ************/
