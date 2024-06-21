@@ -40,7 +40,6 @@ const Banner = () => {
                     </p>
 
                     <TextTypeWrite
-                      timeHide={1000}
                       toRotate={["this website using react bootstrap"]}
                     />
 
