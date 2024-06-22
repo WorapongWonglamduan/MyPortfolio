@@ -74,7 +74,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Stampede Project</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Stampede Project</Nav.Link>
+                        <Nav.Link eventKey="second">Others</Nav.Link>
                       </Nav.Item>
                       {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
