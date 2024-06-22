@@ -10,6 +10,12 @@ import TextTypeWrite from "./utils/TextTypeWrite.js";
 const Banner = () => {
   return (
     <section className="banner" id="banner">
+      {/* <div className="wrap-text-slide">
+        <div className="animated-slide">
+          <span className="text-gradient-welcome">Welcome to my Portfolio</span>
+        </div>
+      </div> */}
+
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7} className="mb-5">
@@ -21,14 +27,12 @@ const Banner = () => {
                       isVisible ? "animate__animated animate__fadeIn" : ""
                     } */
                   >
-                    <span className="tagline">Welcome to my Portfolio</span>
                     <h1>
                       {`Hi! I'm Ao`}{" "}
                       <TextTypeWrite
                         toRotate={["REACT WEB", "REACT NATIVE MOBILE"]}
                       />
                     </h1>
-
                     <p>
                       Name: Worapong Wonglamduan
                       <br />
@@ -38,7 +42,6 @@ const Banner = () => {
                       <br />
                       Date of Birth: 07/01/1996
                     </p>
-
                     <button onClick={() => console.log("connect")}>
                       Let’s Connect <ArrowRightCircle size={25} />
                     </button>

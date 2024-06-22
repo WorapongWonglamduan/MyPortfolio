@@ -18,8 +18,8 @@ const NavBar = () => {
   }, []);
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <a href="#banner">
-        <h1>My Portfolio</h1>
+      <a href="#" style={{ textDecoration: 0 }}>
+        <h1 className="text-gradient">My Portfolio</h1>
       </a>
 
       <nav>

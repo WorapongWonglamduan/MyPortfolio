@@ -158,6 +158,7 @@ p.danger {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .banner .tagline {
   font-weight: 700;
@@ -567,4 +568,58 @@ p.danger {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/* Basic styling for the animated text */
+.text-gradient {
+  font-size: 50px;
+  background: linear-gradient(180.21deg, #a6bcff -5.91%, #01010e 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-welcome {
+  font-size: 50px;
+
+  background: linear-gradient(180.21deg, #a6bcff -5.91%, #f0f0ff 111.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrap-text-slide {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+.animated-slide {
+  font-size: 24px;
+  font-weight: bold;
+  /* Applying the animation */
+  animation: translateXAnimation 10s linear infinite;
+}
+.wrap-slide-box {
+  font-size: 24px;
+  font-weight: bold;
+
+  /* Applying the animation */
+  animation: wrap-slide-box 5s linear infinite;
+}
+
+/* Keyframes for the translate X animation */
+@keyframes translateXAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+@keyframes wrap-slide-box {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

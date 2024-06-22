@@ -6,11 +6,12 @@ import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
+    firstName: "Worapong Wonglamduan",
+    lastName: "Wonglamduan",
+    email: "the_oo_ooo@hotmail.com",
+    phone: "088-9028652",
     message: "",
+    birth: "07/01/1996",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
@@ -52,12 +53,17 @@ export const Contact = () => {
                 //   isVisible ? "animate__animated animate__fadeIn" : ""
                 // }
                 >
-                  <h2>Get In Touch</h2>
+                  <div className="w-100">
+                    <div className="wrap-slide-box">
+                      <h2>Get In Touch</h2>
+                    </div>
+                  </div>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
+                          disabled
                           value={formDetails.firstName}
                           placeholder="First Name"
                           onChange={(e) =>
@@ -68,16 +74,29 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
-                          value={formDetails.lasttName}
+                          disabled
+                          value={formDetails.birth}
+                          placeholder="Date of Birth"
+                          onChange={(e) =>
+                            onFormUpdate("birth", e.target.value)
+                          }
+                        />
+                      </Col>
+                      {/* <Col size={12} sm={6} className="px-1">
+                        <input
+                          type="text"
+                          disabled
+                          value={formDetails.lastName}
                           placeholder="Last Name"
                           onChange={(e) =>
                             onFormUpdate("lastName", e.target.value)
                           }
                         />
-                      </Col>
+                      </Col> */}
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="email"
+                          disabled
                           value={formDetails.email}
                           placeholder="Email Address"
                           onChange={(e) =>
@@ -88,6 +107,7 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="tel"
+                          disabled
                           value={formDetails.phone}
                           placeholder="Phone No."
                           onChange={(e) =>
@@ -95,7 +115,7 @@ export const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} className="px-1">
+                      {/* <Col size={12} className="px-1">
                         <textarea
                           rows="6"
                           value={formDetails.message}
@@ -104,21 +124,12 @@ export const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <button type="submit">
-                          <span>{buttonText}</span>
-                        </button>
-                      </Col>
-                      {status.message && (
-                        <Col>
-                          <p
-                            className={
-                              status.success === false ? "danger" : "success"
-                            }
-                          >
-                            {status.message}
-                          </p>
-                        </Col>
-                      )}
+                        {
+                          <button type="submit">
+                            <span>{buttonText}</span>
+                          </button>
+                        }
+                      </Col> */}
                     </Row>
                   </form>
                 </div>

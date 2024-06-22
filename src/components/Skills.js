@@ -8,11 +8,9 @@ import imgCss from "../assets/img/css-icon.png";
 import imgJs from "../assets/img/javascript.png";
 import imgNodeJs from "../assets/img/nodejs.png";
 import imgGit from "../assets/img/git.png";
-import colorSharp from "../assets/img/color-sharp.png";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-
 
 export const Skills = () => {
   const responsive = {
@@ -44,7 +42,10 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>Programming Languages, Frameworks and Libraries, Tools and Techniques, Others  </p>
+              <p>
+                Programming Languages, Frameworks and Libraries, Tools and
+                Techniques, Others{" "}
+              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -91,7 +92,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
     </section>
   );
 };
