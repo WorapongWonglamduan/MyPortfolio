@@ -39,10 +39,6 @@ const Banner = () => {
                       Date of Birth: 07/01/1996
                     </p>
 
-                    <TextTypeWrite
-                      toRotate={["this website using react bootstrap"]}
-                    />
-
                     <button onClick={() => console.log("connect")}>
                       Let’s Connect <ArrowRightCircle size={25} />
                     </button>

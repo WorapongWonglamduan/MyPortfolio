@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-const TextTypeWrite = ({ toRotate }) => {
+const TextTypeWrite = ({ toRotate, timeHide = 0 }) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(100 - Math.random() * 50);
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   const periodDeleteText = 1500;
-  const periodAddText = 100;
+  const periodAddText = 150; /* - Math.random() * 100; */
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
     }, delta);
 
@@ -27,19 +27,27 @@ const TextTypeWrite = ({ toRotate }) => {
       : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
+
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(periodAddText / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setDelta(periodDeleteText);
     } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-
-      setDelta(periodAddText);
-    } else {
+      if (timeHide && timeHide > 0) {
+        setDelta(timeHide);
+        setIsDeleting(false);
+        setTimeout(() => {
+          setLoopNum(loopNum + 1);
+          setDelta(periodAddText);
+        }, timeHide);
+      } else {
+        setLoopNum(loopNum + 1);
+        setDelta(periodAddText);
+        setIsDeleting(false);
+      }
     }
   };
 
