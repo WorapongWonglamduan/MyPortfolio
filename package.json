@@ -2,7 +2,7 @@
   "name": "portfolio-personal",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,6 +17,7 @@
     "react-multi-carousel": "^2.8.5",
     "react-on-screen": "^2.1.1",
     "react-scripts": "5.0.1",
+    "react-snap": "^1.23.0",
     "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },
@@ -25,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-webpack": "webpack --mode=development"
+    "start-webpack": "webpack --mode=development",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
