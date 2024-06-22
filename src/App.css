@@ -598,9 +598,9 @@ p.danger {
 .wrap-slide-box {
   font-size: 24px;
   font-weight: bold;
-
   /* Applying the animation */
-  animation: wrap-slide-box 5s linear infinite;
+  animation: wrap-slide-box 3s linear infinite;
+  display: inline-block;
 }
 
 /* Keyframes for the translate X animation */

@@ -53,11 +53,10 @@ export const Contact = () => {
                 //   isVisible ? "animate__animated animate__fadeIn" : ""
                 // }
                 >
-                  <div className="w-100">
-                    <div className="wrap-slide-box">
-                      <h2>Get In Touch</h2>
-                    </div>
+                  <div className="wrap-slide-box">
+                    <h2>Contact</h2>
                   </div>
+
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
