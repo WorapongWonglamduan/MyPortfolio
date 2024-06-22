@@ -152,8 +152,8 @@ p.danger {
   /* background-image: url("./assets/img/banner-bg.png"); */
   background: linear-gradient(
     45.21deg,
-    rgba(0, 0, 0, 0.5) 50.01%,
-    rgba(96, 16, 143, 0.5) 100.59%
+    rgba(0, 0, 0, 0.5) 70.01%,
+    #4a2fbd 100.59%
   );
   background-position: top center;
   background-size: cover;
@@ -235,6 +235,11 @@ p.danger {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(
+    200.21deg,
+    rgba(0, 0, 0, 0.5) 65.01%,
+    #4a2fbd 130.59%
+  );
 }
 .skill-bx {
   background: #151515;
@@ -280,7 +285,11 @@ p.danger {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background: linear-gradient(
+    -45.21deg,
+    rgba(0, 0, 0, 0.5) 65.01%,
+    #4a2fbd 130.59%
+  );
 }
 .project h2 {
   font-size: 45px;
@@ -297,14 +306,14 @@ p.danger {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 60%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -325,7 +334,8 @@ p.danger {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  /* background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%); */
+  background: linear-gradient(90.21deg, #a6bcff -5.91%, #0000ff 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -344,6 +354,7 @@ p.danger {
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -357,7 +368,8 @@ p.danger {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(180.21deg, #a6bcff -5.91%, #0000ff 111.58%);
+
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -404,7 +416,7 @@ p.danger {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(140.21deg, #000000 50.91%, #4a2fbd 150.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -465,7 +477,7 @@ p.danger {
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background-color: #464646;
   width: 0;
   height: 100%;
   position: absolute;

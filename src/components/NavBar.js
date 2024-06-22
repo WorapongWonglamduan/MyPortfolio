@@ -18,8 +18,12 @@ const NavBar = () => {
   }, []);
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <h1>My Portfolio</h1>
+      <a href="#banner">
+        <h1>My Portfolio</h1>
+      </a>
+
       <nav>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
