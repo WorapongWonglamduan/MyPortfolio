@@ -74,7 +74,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Stampede Project</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Others</Nav.Link>
+                        <Nav.Link eventKey="second">Vavina Project</Nav.Link>
                       </Nav.Item>
                       {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
@@ -97,7 +97,16 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <Row>Coming ...</Row>
+                        <Row>
+                          <iframe
+                            width="520"
+                            height="520"
+                            src="https://www.youtube.com/embed/9bFHtm02Fjg"
+                            title="YouTube video"
+                            allowFullScreen
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          ></iframe>
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
